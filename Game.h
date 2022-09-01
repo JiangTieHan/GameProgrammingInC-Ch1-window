@@ -38,12 +38,15 @@ private:
 
 	// Window created by SDL
 	SDL_Window* mWindow;
-
 	SDL_Renderer* mRenderer;
 
 	// Game should continue to run
 	bool mIsRunning;
 
+	Uint32 mTicksCount;
+	int mPaddleDir;
+
 	Vector2 mPaddlePos;
 	Vector2 mBallPos;
+	Vector2 mBallVel;
 };
