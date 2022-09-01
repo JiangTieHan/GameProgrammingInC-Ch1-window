@@ -9,6 +9,12 @@
 #pragma once
 #include "SDL/SDL.h"
 
+struct Vector2
+{
+	float x;
+	float y;
+};
+
 // Game class
 class Game
 {
@@ -33,6 +39,11 @@ private:
 	// Window created by SDL
 	SDL_Window* mWindow;
 
+	SDL_Renderer* mRenderer;
+
 	// Game should continue to run
 	bool mIsRunning;
+
+	Vector2 mPaddlePos;
+	Vector2 mBallPos;
 };
